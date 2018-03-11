@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PruebasGmailAPi.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +16,9 @@ namespace PruebasGmailAPi
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Program p = new Program();
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
         }
     }
 }
